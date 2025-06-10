@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap');
+@import 'vendor.scss' layer(theme);
+@import 'overrides.scss' layer(theme);
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
+
+[x-cloak] {
+    display: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+body {
+    background-image: url('/src/assets/backgrounds/tile.png');
+    background-repeat: repeat;
+}
+
+@layer tailwind-base {
+    [type='text']:focus,input:where(:not([type])):focus,
+    [type='email']:focus,
+    [type='url']:focus,
+    [type='password']:focus,
+    [type='number']:focus,
+    [type='date']:focus,
+    [type='datetime-local']:focus,
+    [type='month']:focus,
+    [type='search']:focus,
+    [type='tel']:focus,
+    [type='time']:focus,
+    [type='week']:focus,
+    [multiple]:focus,
+    textarea:focus,
+    select:focus {
+        --tw-ring-color: var(--p-primary-color);
+        border-color: var(--tw-ring-color);
+    }
+}
