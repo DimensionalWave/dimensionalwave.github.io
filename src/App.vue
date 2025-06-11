@@ -10,7 +10,7 @@ import Contact from './components/Contact.vue';
 
 <template>
     <Header />
-    <main class="mt-24 w-full">
+    <main class="mt-16 w-full">
         <Section id="home" v-slot="slotProps">
             <Hero :class="slotProps.class" />
         </Section>
@@ -24,7 +24,7 @@ import Contact from './components/Contact.vue';
             <Contact :class="slotProps.class" />
         </Section>
     </main>
-    <Footer class="mt-8" />
+    <Footer />
 </template>
 
 <style scoped>

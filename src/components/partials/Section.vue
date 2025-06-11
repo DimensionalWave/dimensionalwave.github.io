@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <div class="w-full">
-        <slot class="py-16 w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto" />
+    <div class="w-full py-16 first:pt-0">
+        <slot class="w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto" />
     </div>
 </template>
 

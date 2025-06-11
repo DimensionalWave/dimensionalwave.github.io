@@ -13,7 +13,7 @@ defineProps({
 </script>
 
 <template>
-    <a class="text-white font-text transition duration-200 hover:text-primary hover:ease-in-out focus:text-primary-200 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
+    <a class="text-white font-text font-bold transition duration-200 hover:text-primary-950 hover:bg-primary-300/50 hover:ease-in-out focus:text-primary-200 motion-reduce:transition-none lg:px-2"
        :href="url"
        :title="label">{{ label }}</a>
 </template>
